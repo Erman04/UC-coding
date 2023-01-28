@@ -1,0 +1,14 @@
+export { default as Navbar } from "./Navbar";
+export { default as Landing } from "./Landing";
+export { default as Catalog } from "./Catalog";
+export { default as Contact } from "./Contact";
+export { default as About } from "./About";
+export { default as Feature } from "./Feature";
+export { default as Services } from "./Services";
+export { default as Footer } from "./Footer";
+export { default as PriceCollapse } from "./PriceCollapse";
+export { default as PortfolioSlider } from "./PortfolioSlider";
+export { default as Modal } from "./Modal";
+export { default as ScrollTop } from "./ScrollTop";
+export { default as Pagination } from "./Pagination";
+export { default as SliderComponent } from "./SliderComponent";

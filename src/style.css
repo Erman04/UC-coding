@@ -1,0 +1,88 @@
+.outsiteCard {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-auto-rows: 500px;
+}
+
+.cardInfo {
+  width: 300px;
+  height: 420px;
+  --tw-bg-opacity: 1;
+  border: 5px solid rgb(107 90 249 / var(--tw-bg-opacity));
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: ease-in-out .5s;
+  border-radius: 25px;
+}
+
+.cardImg {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  top: 20px;
+  transition: ease-in-out .5s;
+  border-radius: 8px;
+  z-index: 5;
+}
+
+.cardImg>img {
+  width: 100%;
+  height: 100%;
+  --tw-bg-opacity: 1;
+  border: 5px solid rgb(107 90 249 / var(--tw-bg-opacity));
+  transition: ease-in-out .5s;
+  border-radius: 3px;
+  z-index: 5;
+}
+
+.cardName {
+  font-size: 26px;
+  position: absolute;
+  top: 290px;
+  font-weight: bold;
+  transition: ease-in-out .5s;
+  z-index: 5;
+}
+
+.cardJob {
+  font-size: 24px;
+  position: absolute;
+  top: 330px;
+  transition: ease-in-out .5s;
+  z-index: 5;
+}
+
+.messages {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 30px;
+  position: absolute;
+  top: 120px;
+  transition: ease-in-out .5s;
+  opacity: 0;
+
+}
+
+.cardInfo:hover {
+  transition: ease-in-out 2s;
+  top: -20px;
+}
+
+.cardInfo:hover .cardImg {
+  top: -30px;
+}
+
+.cardInfo:hover .cardName {
+  top: 240px;
+}
+
+.cardInfo:hover .cardJob {
+  top: 270px;
+}
+
+.cardInfo:hover .messages {
+  top: 330px;
+  opacity: 1;
+}
